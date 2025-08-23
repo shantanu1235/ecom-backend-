@@ -9,7 +9,7 @@ const cookie =require('cookie-parser')
 databaseconnect()
 
 app.use(cors({
-    origin:['http://localhost:5173','https://ecomerce232.netlify.app'],
+    origin:['http://localhost:5173','https://ecommerce343.netlify.app'],
     methods:['GET','POST','PUT','DELETE'],
     credentials:true,
 }))
