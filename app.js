@@ -19,5 +19,8 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/auth',authrouter);
 app.use(cookie())
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 
 module.exports = app;
