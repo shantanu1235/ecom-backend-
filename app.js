@@ -9,7 +9,8 @@ const cookie =require('cookie-parser')
 databaseconnect()
 
 app.use(cors({
-    origin:[*],
+    origin:['e-commerce-three-xi-14.vercel.app
+'],
     methods:['GET','POST','PUT','DELETE'],
     credentials:true,
 }))
