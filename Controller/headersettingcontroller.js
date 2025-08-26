@@ -49,6 +49,7 @@ exports.createOrUpdateHeaderSettings = async (req, res) => {
 exports.getHeaderSettings = async (req, res) => {
   try {
     const settings = await HeaderSettings.findOne();
+    if (!settings) return res.status(404).json({ success: false, message: "Not found" });
     res.json({ success: true, data: settings });
   } catch (err) {
     res.status(500).json({ success: false, message: err.message });
